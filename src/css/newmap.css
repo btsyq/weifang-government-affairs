@@ -1,0 +1,840 @@
+.newmap-map-pane,
+.newmap-tile,
+.newmap-marker-icon,
+.newmap-marker-shadow,
+.newmap-marker-label,
+.newmap-tile-pane,
+.newmap-overlay-pane,
+.newmap-shadow-pane,
+.newmap-label-pane,
+.newmap-marker-pane,
+.newmap-marker-img,
+.newmap-tmp-pane,
+.newmap-zoomdirect-pane,
+.newmap-dialog-pane,
+.newmap-overlay-pane svg,
+.newmap-zoom-box,
+.newmap-control-panzoombar
+.newmap-bound-image { 
+    position: absolute;
+    left: 0;
+	top: 0;
+    }
+.newmap-container {
+    overflow: hidden;
+	-ms-touch-action: none;
+    }
+
+    
+.newmap-marker-span {
+    position: absolute;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    width: 0px;
+    height: 0px;
+    display: '';
+    z-index:0;
+}
+.newmap-marker-span div {
+    position: absolute; 
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    overflow:hidden;
+}
+.newmap-marker-div{
+    position: absolute;
+    cursor:pointer;
+    border:0px;
+    background-color:transparent;
+    background-repeat: no-repeat no-repeat;
+}
+
+.newmap-tile,
+.newmap-marker-img,
+.newmap-marker-span,
+.newmap-label,
+.newmap-control-panzoombar,
+.newmap-button,
+.newmap-marker-div,
+.newmap-marker-label,
+.newmap-marker-shadow {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    }
+.newmap-marker-img,
+.newmap-label,
+.newmap-marker-label,
+.newmap-marker-shadow {
+    display: '';
+    }
+.newmap-marker-label{
+	position: absolute;
+    font: 12px arial,simsun;
+    padding: 5px;
+    
+    white-space: nowrap;
+}
+
+.newmap-label {
+    position: absolute;
+    font: 12px arial,simsun;
+    border-bottom: #8c8c8c 1px solid;
+    border-left: #8c8c8c 1px solid; 
+    border-top: #8c8c8c 1px solid; 
+    border-right: #8c8c8c 1px solid;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    
+    white-space: nowrap;
+    background-color: #ffffe1;
+    color: #4d4d4d;
+    padding-left: 1px; 
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    }
+.newmap-label-tip-container {
+    top: 15px;
+    margin: 0 auto;
+    width: 44px;
+    height: 12px;
+    position: relative;
+    overflow: hidden;
+    }
+.newmap-arrowlab {   
+    position: absolute;
+    text-align: center;
+    word-wrap: break-word;
+    
+    }    
+.newmap-arrowlabel{
+    width: 28px;
+    height: 12px;
+    padding: 1px;
+    line-height: 12px;
+    margin: 0px auto ;
+    background: url(./NewMapJSRes/label-arrow.png) no-repeat;
+}
+.newmap-label-content-wrapper {
+    padding: 1px;
+    text-align: left;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    }
+.newmap_measure_label {
+    line-height:16px;
+    z-index:99999;
+    border-bottom: #ff0000 1px solid;
+    border-left: #ff0000 1px solid; 
+    border-top: #ff0000 1px solid; 
+    border-right: #ff0000 1px solid;
+}
+.newmap_measure_dis{
+    color:#ff0132;
+    font-weight:bold;
+}
+.newmap_measure_opinfo{
+    color:#7a7a7a;
+}
+
+.newmap-clickable {
+    cursor: pointer;
+    }
+.newmap-popfront {
+    z-index: 300000; 
+    }
+.newmap-dragging {
+    cursor: move;
+    }
+.newmap-dragging .newmap-clickable {
+    cursor: move;
+    }
+
+.newmap-div-icon {
+    background: #fff;
+    border: 1px solid #666;
+}
+.newmap-editing-icon {
+    border-radius: 2px;
+}
+.newmap-div-element {
+    position: absolute;
+    border-radius: 2px;
+    background: #fff;
+    margin-left:-4px;
+    margin-top:-4px;
+    width:6px;
+    height:6px;
+    border: 1px solid #666;
+}
+.newmap-tile-pane { z-index: 2; }
+
+.newmap-objects-pane { z-index: 3; }
+.newmap-overlay-pane { z-index: 4; }
+.newmap-shadow-pane { z-index: 5; }
+.newmap-marker-pane { z-index: 6; }
+.newmap-tmp-pane { z-index: 7; }
+.newmap-dialog-pane { z-index: 8; }
+.newmap-label-pane { z-index: 9; }
+.newmap-top-zindex {z-index: 999999;}
+.newmap-zoom-box {
+    width: 0;
+    height: 0;
+    }
+
+.newmap-tile {
+    visibility: hidden;
+    }
+.newmap-tile-loaded {
+    visibility: inherit;
+    }
+
+a.newmap-active {
+    outline: 2px solid orange;
+    }
+
+.newmap_hide{
+display: none; 
+}
+.newmap_contextMenu { 
+    background: #FFFFFF; 
+    border: 1px solid #999; 
+    width: 150px; 
+    position: absolute; 
+    display: none; 
+    -moz-box-shadow: 3px 3px 9px #999; 
+    -webkit-box-shadow: 3px 3px 9px #999; 
+    -o-box-shadow: 3px 3px 9px #999; 
+    box-shadow: 3px 3px 9px #999; 
+    z-index:999999;
+} 
+.newmap_contextMenu_item { 
+    border-bottom: none; 
+    line-height: 24px; 
+    display: ''; 
+    padding-left: .5em; 
+    font-size:12px;
+    cursor:pointer;
+    background-color: #FFFFFF; 
+} 
+.newmap_contextMenu_sepr {border-bottom: 1px solid #ddd;} 
+
+.newmap_contextMenu_item_hover { 
+    background-color: #FFBD00; 
+}
+
+.newmap-control {
+    position: relative;
+    z-index: 7;
+    }
+.nmOverviewMapControlContainer {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+}
+
+.nmOverviewMapControlElement {
+    padding: 10px 18px 10px 10px;
+    background-color: #00008B;
+    -moz-border-radius: 1em 0 0 0;
+}
+
+.nmOverviewMapControlMinimizeButton {
+    position:absolute;
+    background:url(./NewMapJSRes/layerListOff.gif) no-repeat;
+	width:18px;
+	height:18px;	
+    right: 0px;
+    bottom: 80px;
+}    
+
+.nmOverviewMapControlMaximizeButton {
+    position:absolute;
+    background:url(./NewMapJSRes/layerListOn.gif) no-repeat;
+	width:18px;
+	height:18px;
+    right: 0px;
+    bottom: 80px;
+}
+
+.nmOverviewMapControlExtentRectangle {
+    overflow: hidden;
+    background: url(./NewMapJSRes/blank.gif);
+    cursor: move;
+    border: 2px dotted red;
+}
+.nmOverviewMapControlRectReplacement {
+    overflow: hidden;
+    background: url(./NewMapJSRes/overview_replacement.gif);
+    cursor: move;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.newmap-top{
+    position: absolute;
+    top: 0;
+    }
+.newmap-right {
+     position: absolute;
+    right: 0;
+    }
+.newmap-bottom {
+ position: absolute;
+    bottom: 0;
+    }
+.newmap-left {
+ position: absolute;
+    left: 0;
+    }
+.newmap-control {
+    float: left;
+    clear: both;
+    }
+.newmap-right .newmap-control {
+    float: right;
+    }
+.newmap-top .newmap-control {
+    margin-top: 10px;
+    }
+
+.newmap-left .newmap-control {
+    margin-left: 10px;
+    }
+
+.newmap-button{
+    cursor:pointer;
+}
+.newmap-control-panzoombar{
+    width: 62px; 
+    height: 214px; 
+    position: absolute; 
+    z-index: 1100; 
+    /*bottom: auto; 
+    right: auto; 
+    top: 10px; 
+    left: 10px; ll*/
+}
+.newmap-control-panzoombar .pancontrol,
+.newmap-control-panzoombar .pancontrol-left,
+.newmap-control-panzoombar .pancontrol-right,
+.newmap-control-panzoombar .pancontrol-top,
+.newmap-control-panzoombar .pancontrol-bottom{
+    background:url(./NewMapJSRes/bd.png) no-repeat;
+    background-position: 0px 0px;
+    width:44px;
+    overflow:hidden;
+    height:44px;
+}
+.newmap-control-panzoombar .pancontrol-left{
+    background-position: 0px -176px;
+}
+.newmap-control-panzoombar .pancontrol-top{
+    background-position: 0px -44px;
+}
+.newmap-control-panzoombar .pancontrol-right{
+    background-position: 0px -88px;
+}
+.newmap-control-panzoombar .pancontrol-bottom{
+    background-position: 0px -132px;
+}
+.newmap-control-panzoombar .newmap-button{
+    position:absolute;
+    width:15px;
+    height:15px;
+}
+.panleftbt{
+    top:12px;
+    left:1px;
+}
+.pantopbt{
+    top:0px;
+    left:14px;
+}
+.panrightbt{
+    top:12px;
+    left:27px;
+}
+.panbottombt{
+    top:25px;
+    left:14px;
+}
+.newmap-control-panzoombar .zoomcontrol{
+   
+    width: 62px;
+    top:45px;
+    overflow:hidden;
+}
+.zoomcontrol .newmap-button{
+    position:absolute;
+    left:12px;
+    width:21px;
+    height:21px;
+    overflow:hidden;
+    background:url(./NewMapJSRes/bd.png) no-repeat;
+    background-position:0px 0px;
+}
+.zoomcontrol .zoominbt{
+    background-position: 0px -221px;
+    z-index:1;
+}
+.zoomcontrol .zoomoutbt{ 
+    background-position: 0px -265px;
+    z-index:1;
+}
+.zoomcontrol .zoominbt2{
+    background-position: 0px -243px;
+}
+.zoomcontrol .zoomoutbt2{
+    top: 126px; 
+    background-position: 0px -287px;
+}
+.zoomcontrol .barcontrol{
+    position:absolute;
+    width:37px;
+    top:62px;
+    border-color: red;
+    border:1px;
+}
+.barcontrol .sliderbarbg{
+    position:absolute;
+    width:10px;
+    left:18px;
+    overflow:hidden;
+    background:url(./NewMapJSRes/bd.png) no-repeat;
+    background-position:-23px -226px;
+}
+.barcontrol .sliderbartop{
+    position:absolute;
+    width:8px;
+    left:19px;
+    overflow:hidden;
+    background:url(./NewMapJSRes/bd.png) no-repeat;
+    background-position:-33px -226px;
+}
+.barcontrol .sliderbt{
+    position:absolute;
+    width:19px;
+    height:11px;
+    left:13px;
+    overflow:hidden;
+    background:url(./NewMapJSRes/bd.png) no-repeat;
+    background-position:0px -309px;
+}
+.barcontrol .leveltag-1,
+.barcontrol .leveltag-2,
+.barcontrol .leveltag-4,
+.barcontrol .leveltag-3{
+    position:absolute;
+    width:28px;
+    height:21px;
+    left:34px;
+    overflow:hidden;
+    background:url(./NewMapJSRes/bd.png) no-repeat;
+    background-position:0px -443px;
+}
+.barcontrol .leveltag-2{
+    background-position:0px -422px;
+}
+.barcontrol .leveltag-3{
+    background-position:0px -401px;
+}
+.barcontrol .leveltag-4{
+    background-position:0px -380px;
+}
+
+
+.newmap-zoomdirect-pane .zoomdirect-tl,
+.newmap-zoomdirect-pane .zoomdirect-tr,
+.newmap-zoomdirect-pane .zoomdirect-bl,
+.newmap-zoomdirect-pane .zoomdirect-br,
+.newmap-zoomdirect-pane-out .zoomdirect-br,
+.newmap-zoomdirect-pane-out .zoomdirect-tl,
+.newmap-zoomdirect-pane-out .zoomdirect-tr,
+.newmap-zoomdirect-pane-out .zoomdirect-bl{
+    position:absolute;
+    background:url(./NewMapJSRes/zoomdirect.gif) no-repeat;
+    background-position: 0px 0px;
+    width:7px;
+    overflow:hidden;
+    height:7px;
+
+}
+.newmap-zoomdirect-pane .zoomdirect-br,
+.newmap-zoomdirect-pane-out .zoomdirect-tl{
+    background-position: 0px 0px;
+}
+
+.newmap-zoomdirect-pane .zoomdirect-bl,
+.newmap-zoomdirect-pane-out .zoomdirect-tr{
+    background-position: -7px 0px;
+}
+
+.newmap-zoomdirect-pane .zoomdirect-tr,
+.newmap-zoomdirect-pane-out .zoomdirect-bl{
+    background-position: 0px -7px;
+}
+
+.newmap-zoomdirect-pane .zoomdirect-tl,
+.newmap-zoomdirect-pane-out .zoomdirect-br{
+    background-position: -7px -7px;
+}
+.newmap-show{
+    visibility: hidden;
+    display:none;
+}
+
+.newmap-control-position {
+    bottom: 0em;
+    right: 0px;
+    display: '';
+    font-family: Arial;
+    font-size: 15px;
+    background-color:#A9D4F6;
+}
+
+.newmap-control-zoom {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    }
+.newmap-control-zoom {
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.25);
+    }
+.newmap-control-zoom a {
+    background-color: rgba(255, 255, 255, 0.75);
+    }
+.newmap-control-zoom a, .newmap-control-layers a {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: ''
+    }
+.newmap-control-zoom a {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 19px;
+    height: 19px;
+    }
+.newmap-control-zoom a:hover {
+    background-color: #fff;
+    }
+.newmap-touch .newmap-control-zoom a {
+    width: 27px;
+    height: 27px;
+    }
+.newmap-control-zoom-in {
+    background-image: url(./NewMapJSRes/zoom-in.png);
+    margin-bottom: 5px;
+    }
+.newmap-control-zoom-out {
+    background-image: url(./NewMapJSRes/zoom-out.png);
+    }
+
+.newmap-control-layers {
+    box-shadow: 0 1px 7px #999;
+    background: #f8f8f9;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    }
+.newmap-control-layers a {
+    background-image: url(./NewMapJSRes/layers.png);
+    width: 36px;
+    height: 36px;
+    }
+.newmap-touch .newmap-control-layers a {
+    width: 44px;
+    height: 44px;
+    }
+.newmap-control-layers .newmap-control-layers-list,
+.newmap-control-layers-expanded .newmap-control-layers-toggle {
+    display: none;
+    }
+.newmap-control-layers-expanded .newmap-control-layers-list {
+    display: '';
+    position: relative;
+    }
+.newmap-control-layers-expanded {
+    padding: 6px 10px 6px 6px;
+    font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #fff;
+    }
+.newmap-control-layers input {
+    margin-top: 2px;
+    position: relative;
+    top: 1px;
+    }
+.newmap-control-layers label {
+    display: '';
+    }
+.newmap-control-layers-separator {
+    height: 0;
+    border-top: 1px solid #ddd;
+    margin: 5px -10px 5px -6px;
+    }
+
+.newmap-container .newmap-control-attribution {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px #bbb;
+    margin: 0;
+}
+
+.newmap-control-attribution,
+.newmap-control-scale-line {
+    padding: 0 5px;
+    color: #333;
+    }
+
+.newmap-container .newmap-control-attribution,
+.newmap-container .newmap-control-scale {
+    font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+.newmap-left .newmap-control-scale {
+    margin-left: 5px;
+    }
+.newmap-bottom .newmap-control-scale {
+    margin-bottom: 5px;
+    }
+
+.newmap-control-scale-line {
+    border: 2px solid #777;
+    border-top: none;
+    color: black;
+    line-height: 1;
+    font-size: 10px;
+    padding-bottom: 2px;
+    text-shadow: 1px 1px 1px #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+.newmap-control-scale-line:nth-child(2) {
+    border-top: 2px solid #777;
+    padding-top: 1px;
+    border-bottom: none;
+    margin-top: -2px;
+    }
+
+.newmap-touch .newmap-control-attribution, .newmap-touch .newmap-control-layers {
+    box-shadow: none;
+    }
+.newmap-touch .newmap-control-layers {
+    border: 5px solid #bbb;
+    }
+
+
+
+.newmap-zoom-anim2 .newmap-tile,  
+.newmap-pan-anim .newmap-tile {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    }
+
+.newmap-zoom-anim2 .newmap-objects-pane {
+    visibility: hidden;
+    display:none;
+    }
+
+.newmap-zoom-anim2 .newmap-layer {
+    visibility: hidden;
+    display:none;
+    }   
+.newmap-dialog {
+    position: absolute;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
+    }
+.newmap-dialog-content-wrapper {
+    padding: 1px;
+    text-align: left;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    }
+.newmap-dialog-content {
+    padding: 14px 20px;
+    line-height: 1.4;
+    }
+   
+.newmap-dialog-tip-container {
+    margin: 0 auto;
+    width: 44px;
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+    }
+.newmap-dialog-tip {
+    width: 20px;
+    height: 15px;
+    padding: 1px;
+
+    margin: 0px auto 0;
+    }
+.newmap-dialog-content-wrapper {
+    background: white;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
+
+.newmap-dialog-close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 14px;
+    height: 14px;
+
+    overflow: hidden;
+    }
+.newmap-dialog-content p {
+    margin: 18px 0;
+    }
+.newmap-dialog-scrolled {
+    overflow: auto;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    }
+
+.newmap-tipdialog{
+    position: absolute; 
+    z-index: 751; 
+}
+.newmap-tipdialog-content-wrapper{
+}
+.newmap-tipdialog-main-cont{ 
+    position: relative;
+    margin:0;
+    padding-bottom:10px;
+    overflow:hidden;
+    border-left:2px solid #005CB5;
+    border-right:2px solid #005CB5;
+    background:#fff;
+    z-index:100;
+}
+.newmap-tipdialog-arr {
+    position: relative;
+    top: -2px;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+  /*  border: 2px solid #005CB5;
+    transform:          rotate(68deg) skew(45deg);
+    -moz-transform:     rotate(68deg) skew(45deg);
+    -o-transform:       rotate(68deg) skew(45deg);
+    -webkit-transform:  rotate(68deg) skew(45deg);  */
+}
+.newmap-tipdialog-arr{
+    background: url(./NewMapJSRes/tip-arrow.png) no-repeat;
+}
+.newmap-tipdialog-sub-title{
+    font-size:14px;
+    line-height:23px;
+    text-indent:12px;
+    color:#fff;
+    background:#005CB5;
+    margin:0;
+    padding-right:33px;
+    height:25px;
+    overflow:hidden;
+}
+.newmap-tipdialog-sub-title img{
+    position: relative;
+    float:right;
+    right:-20px;
+    margin-top:-44px;
+}
+.newmap-tipdialog-sub-title span{
+    font-size: 12px; 
+    color:#ffffff;
+    font-weight:normal;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.newmap-tipdialog-sub-content{ 
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.newmap-tipdialog-sub-content span{
+    font-size: 12px; 
+    color:#000000;
+    font-weight:normal;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.newmap-tipdialog-thborder{
+    z-index: 100; 
+    position: relative;
+    top:0px;
+}
+.newmap-tipdialog-bhborder{
+    z-index: 100; 
+}
+
+.newmap-tipdialog-b1,.newmap-tipdialog-b2,.newmap-tipdialog-b3,.newmap-tipdialog-b4{ margin:0 5px;background:#005CB5;display:block;border-left:1px solid #005CB5;border-right:1px solid #005CB5;height:1px;overflow:Hidden;font-size:1px;}
+.newmap-tipdialog-b2{ margin:0 3px}  
+.newmap-tipdialog-b3{ margin:0 2px;background:#005CB5;border-width:3px;}
+.newmap-tipdialog-b4{ margin:0 1px;background:#005CB5;height:2px;border-width:2px;}
+.newmap-tipdialog-sub-tip{margin:auto; width:17px; height: 23px;}
+.newmap-tipdialog-sub-stip{line-height:1px;font-size:0px;background:#fff;height:1px;overflow:hidden;border-left:2px solid #005CB5;margin:0 auto;text-align:center;border-right:2px solid #005CB5;}
+
+.newmap-container {
+    background: #ddd;
+    }
+.newmap-container a {
+    color: #0078A8;
+    }
+.newmap-zoom-box {
+    border: 2px dotted #05f;
+    background: white;
+    opacity: 0.5;
+    }
+.newmap-dialog-content-wrapper/*, .newmap-dialog-tip */{
+    background: white;
+    box-shadow: 0 3px 10px #888;
+    -moz-box-shadow: 0 3px 10px #888;
+    -webkit-box-shadow: 0 3px 14px #999;
+    }
+.newmap-dialog-content-wrapper {
+   
+    }
+.newmap-dialog-content {
+    font: 12px/1.4 "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+.newmap-dialog-close-button {
+    background: white url(./NewMapJSRes/dialog-close.gif);
+    }
+.newmap-dialog-tip{
+    background: url(./NewMapJSRes/marker-arrow.png) no-repeat;
+	
+}
+.newmap-group-text {
+    width: 54px;
+    height: 18px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+    cursor: pointer;
+    }

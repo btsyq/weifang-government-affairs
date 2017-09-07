@@ -1,0 +1,403 @@
+@import './public/reset.css';
+@import './public/layout.css';
+@import './public/leftBar.css';
+
+#chart1{
+	height: 177px;
+	width: 100%;
+	overflow: hidden;
+}
+#chart2{
+	height: 360px;
+	width: 100%;
+}
+#chart3{
+	height: 355px;
+	width: 100%;
+}
+#chart4{
+	height: 425px;
+	width: 100%;
+}
+#chart5{
+	height: 360px;
+	width: 100%;
+	position: relative;
+}
+#chart6{
+	height: 100px;
+	width: 100%;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 20px 35px;
+	line-height: 2em;
+	overflow: auto;
+}
+#main_head{
+	position: fixed;
+	z-index: 99;
+	width: 1048px;
+	left: 222px;
+	top: 68px;
+	background:rgba(0,46,115,.8);
+	border: 1px solid #002e73;
+}
+.content{
+	margin-top: 332px;
+}
+#echart2,#echart4{
+	height: 100%;
+	width: 100%;
+}
+#echart3_1,
+#echart3_2 {
+	width: 500px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+#echart3_1{
+	border-image: -webkit-linear-gradient(rgba(0, 123, 200, 0), rgba(0, 123, 200, 1), rgba(0, 123, 200, 0)) 1 1;
+	border-image: -moz-linear-gradient( rgba(0, 123, 200, 0), rgba(0, 123, 200, 1), rgba(0, 123, 200, 0)) 1 1;
+	border-image: linear-gradient( rgba(0, 123, 200, 0), rgba(0, 123, 200, 1), rgba(0, 123, 200, 0)) 1 1;
+	border-width: 0 1px 0 0;
+}
+#chart3_2{
+	width: 460px;
+	height: 250px;
+	/*border: 1px solid red;*/
+	margin-top: 80px;
+	margin-left: 40px;
+}
+#chart3_2>div{
+	color: #fff;
+	font-size: 14px;
+	/*overflow: hidden;*/
+	margin-bottom: 32px;
+	height: 22px;
+}
+#chart3_2>div>div{
+	float: left;
+	line-height: 19px;
+	height: 19px;
+}
+.c3nos{
+	width: 19px;
+	text-align: center;
+}
+.c3names{
+	width: 75px;
+	margin-left: 12px;
+}
+.c3bars{
+	background: #000514;
+	width: 295px;
+}
+#chart3_2 .c3bars{
+	height: 10px;
+	margin-top: 5px;
+}
+.c3data{
+	margin-left: 15px;
+}
+.no_1>.c3nos{
+	border: 1px solid #e61a00;
+	background: rgba(237,34,2,.2);
+}
+.no_2>.c3nos{
+	border: 1px solid #fc5f00;
+	background: rgba(252,95,0,.2);
+}
+.no_3>.c3nos{
+	border: 1px solid #fff100;
+	background: rgba(255,241,0,.2);
+}
+.no_1>.c3names{
+	color: #e61a00;
+}
+.no_2>.c3names{
+	color: #fc5f00;
+}
+.no_3>.c3names{
+	color: #fff100;
+}
+.no_1>.c3bars>div{
+	height: 100%;
+	background: #d62005;
+}
+.no_2>.c3bars>div{
+	height: 100%;
+	background: #e35902;
+}
+.no_3>.c3bars>div{
+	height: 100%;
+	background: #e6dc34;
+}
+.no_4>.c3bars>div{
+	height: 100%;
+	background: #0d2ada;
+}
+.no_5>.c3bars>div{
+	height: 100%;
+	background: #00a3e1;
+}
+.c2_title{
+	height: 36px;
+	color: #fff;
+	line-height: 36px;
+	position: absolute;
+	top: 12px;
+	left: 0;
+}
+.c2_title>p {
+	height: 16px;
+	line-height: 16px;
+	margin-top: 10px;
+	border-left: 3px solid #ff3c00;
+	text-indent: 8px;
+	margin-left: 40px;
+}
+
+#chart3_1{
+	width: 100%;
+	height: 100%;
+}
+
+.c5left{
+	height: 100%;
+	width: 80px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+.c5lDate{
+	height: 20px;
+	margin-top: 30px;
+	color: #00baff;
+	text-align: center;
+}
+.c5lBg{
+	height: 300px;
+	width: 100%;
+	background: url(../images/sleftbar.png) center no-repeat;
+	position: relative;
+}
+.c5lBg>div{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+.circle1{
+	left: 14px;
+	top: 28px;
+	background: url(../images/points.png) no-repeat;
+	background-position: 15px 13px;
+}
+.circle2{
+	left: 14px;
+	top: 117px;
+	background: url(../images/points.png) no-repeat;
+	background-position: 15px -55px;
+}
+.circle3{
+	left: 14px;
+	top: 210px;
+	background: url(../images/points.png) no-repeat;
+	background-position: -4px -147px;
+}
+
+.c5right{
+	position: absolute;
+	left: 110px;
+	top: 70px;
+	width: 870px;
+	height: 290px;
+}
+.c5right>div{
+	height: 62px;
+	overflow: hidden;
+	line-height: 62px;
+	margin-bottom: 30px;
+}
+.msgdate{
+	color: #fff;
+	width: 70px;
+	float: left;
+}
+.msgs{
+	width: 760px;
+	height: 100%;
+	float: left;
+	background: url(../images/msgbg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.tous{
+	color: #00d039;
+	margin-left: 30px;
+}
+.zix{
+	color: #009eff;
+	margin-left: 30px;
+}
+.qiuz{
+	color: #ff4d00;
+	margin-left: 30px;
+}
+.jub{
+	color: #ffa800;
+	margin-left: 30px;
+}
+.msgc{
+	color: #fff;
+}
+.xgmy{
+	color: #00b4ff;
+	display: inline-block;
+	height: 100%;
+	width: 150px;
+	float: right;
+}
+
+#chart1>div{
+	/*border: 1px solid red;*/
+	float: left;
+	height: 100%;
+}
+.chart1_1{
+	width: 285px;
+	background: url(../images/border.png) no-repeat;
+	background-position: right center;
+}
+.chart1_2{
+	width: 557px;
+	background: url(../images/border.png) no-repeat;
+	background-position: right center;
+}
+.chart1_3{
+	width: 170px;
+}
+.fssj_tt,.sjdd_tt{
+	color: #00d7ff;
+}
+.fssj_cn,.sjdd_cn{
+	color: #fff;
+	
+}
+.sjdd_cn{
+	height: 55px;
+	overflow: auto;
+}
+.fssj,.sjdd{
+	/*text-indent: 30px;*/
+	margin-top: 25px;
+	line-height: 2em;
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+.sjdd{
+	margin-top: 15px;
+}
+.c121{
+	height: 60px;
+	background: url(../images/border2.png) no-repeat;
+	background-position: center bottom;
+	line-height: 60px;
+	text-align: center;
+}
+.num_pub{
+	color: #00d7ff;
+}
+.num_pub_t{
+	color: #fff;
+}
+.num_pub_n{
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+.c122{
+	overflow: hidden;
+}
+.c122s{
+	/*border: 1px solid red;*/
+	float: left;
+	height: 100px;
+	width: 110px;
+	overflow: hidden;
+	margin-left: 25px;
+}
+.c122s>div{
+	float: left;
+}
+.c122ic{
+	width: 46px;
+	height: 46px;
+	background: url(../images/hotevent.png) no-repeat;
+	margin-top: 27px;
+}
+.ic1{
+	background-position: 0 -54px;
+}
+.ic2{
+	background-position: 0 -108px;
+}
+.ic3{
+	background-position: 0 -164px;
+}
+
+.c122t{
+	margin-left: 10px;
+	margin-top: 23px;
+}
+.c122t>p{
+	color: #fff;
+	line-height: 2em;
+}
+.c122t>p>span{
+	font-size: 25px;
+}
+.datat1{
+	color: #009eff;
+}
+.datat2{
+	color: #ffa800;
+}
+.datat3{
+	color: #00d039;
+}
+.datat4{
+	color: #ff4d00;
+}
+.c13p1{
+	color: #ff3c00;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 40px;
+	font-weight: bold;
+}
+.c13p1>span{
+	font-size: 40px;
+}
+.c13p2{
+	color: #ffcc00;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1280px) {
+	#main_head{
+		position: absolute;
+	}
+}

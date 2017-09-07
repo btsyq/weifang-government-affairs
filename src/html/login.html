@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body>
+<!--[if lt IE 9]>
+<div id="ie8-warning"><div id="centerbBrower"><b>您当前使用的浏览器版本较低，为使您获得更好的操作体验，我们推荐您使用如下浏览器</b><a class="internet" href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank"></a><a class="Firefox" href="http://www.mozillaonline.com/"></a><a class="Chrome" href="http://www.google.com/chrome/?hl=zh-CN"></a></div><span onclick=hide()>隐藏</span>
+
+</div>
+<script type="text/javascript">
+function position_fixed(el, eltop, elleft){  
+       // check if this is ie8  
+       if(!window.XMLHttpRequest)  
+              window.onscroll = function(){  
+                     el.style.top = (document.documentElement.scrollTop + eltop)+"px";  
+                     el.style.left = (document.documentElement.scrollLeft + elleft)+"px";  
+       }  
+       else el.style.position = "fixed";  
+}
+       position_fixed(document.getElementById("ie8-warning"),0, 0);
+       function hide(){
+              document.getElementById("ie8-warning").style.display="none";
+       }
+</script>
+<![endif]-->
+		<div class="wrap">
+			<div class="login_title">
+				
+			</div>
+			<div class="login">
+				<div class="logt">
+					登录帐号
+				</div>
+				<div class="logform">
+					<form action="" method="post">
+						<input type="text" class="name" placeholder="手机号/邮箱"/>
+						<input type="password" class="psw"  placeholder="密码"/>
+						<div class="hint"></div>
+						<input type="submit" value="立即登录" class="sbm"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

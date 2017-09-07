@@ -1,0 +1,102 @@
+@import './public/reset.css';
+@import './public/layout.css';
+
+#mainWrap{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	position: absolute;
+	width: 1280px;
+	top: 100px;
+	left: 50%;
+	margin-left: -640px;
+	color: #fff;
+}
+.searchlist>input{
+	width: 150px;
+	height: 30px;
+	border-radius: 4px;
+	border: 1px solid #6494e6;
+	background: #0a1663;
+	color: #fff;
+	text-indent: 15px;
+	margin-right: 40px;
+}
+.searchbtn{
+	height: 30px;
+	width: 100px;
+	border-radius: 6px;
+	color: #fff;
+	border: none;
+	outline: 0;
+	background: #0076ff;
+}
+.searchbtn:hover{
+	background: #4350c2;
+}
+.searchtable{
+	width: 100%;
+	border:solid #6494e6;
+	border-width: 1px 0 0 1px;
+	margin-top: 20px;
+}
+.searchtable th,.searchtable td{
+	border:solid #6494e6;
+	border-width: 0 1px 1px 0;
+	text-align: center;
+	height: 30px;
+	max-width: 200px;
+	word-break: break-all;
+}
+.searchlist>select{
+	height: 30px;
+	border-radius: 4px;
+	border: 1px solid #6494e6;
+	background: #0a1663;
+	color: #fff;
+	text-indent: 15px;
+	outline: none;
+
+}
+.yearselect{
+	width: 80px;
+}
+.monselect{
+	width: 60px;
+}
+.bmlx{
+	width: 105px;
+	margin-right: 40px;	
+}
+.ldxz{
+	width: 105px;
+	margin-right: 40px;	
+}
+.sjlx{
+	width: 105px;
+	margin-right: 40px;	
+}
+.bm{
+	width: 105px;
+	margin-right: 40px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pageTool{
+	margin-top: 20px;
+}
