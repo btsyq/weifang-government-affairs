@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/wldwrx.css">
+		<script type="text/javascript" src='../js/tool/respond.js'></script>
+		<title>网络单位热线</title>
+	</head>
+
+	<body>
+		<div class="header cf">
+			<div>
+				<div class="inner">
+					<a href="index.html">
+						<h1 class="logo fl">
+					<img src="../images/title.png"/>
+				</h1>
+					</a>
+					<div class="admin fr">
+						<div class="admin_icon"></div>
+						<div class="admin_name">Admin</div>
+					</div>
+					<div class="userArea fr">
+						<a href="index.html" class="head_btn">首页</a>
+						<a href="wldwrx.html" class="head_btn active">网络单位热线</a>
+						<a href="sqrd.html" class="head_btn">诉求热点</a>
+						<a href="rxyc.html" class="head_btn">热线预测</a>
+						<a href="rxzz.html" class="head_btn">热线追踪</a>
+						<a href="javascript:void(0)" class="head_btn" id="yuqing">舆情</a>
+						<form method="post" id="loginform" action="http://yuqing.9cfcf.com/login/login.do">
+							<input type="text" name="userName" id="userName" placeholder="用户名" value="yuqing@jusfoun.com"/>
+							<div class="loginBtnBox">
+								<input type="submit" class="loginBtn" value="登录" style="width: 150px; margin-top: 10px; margin-left: 5px" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="nav cf">
+			<ul class="nav_ul">
+				<li>
+					<a href="wldwrx.html">市总览</a>
+				</li>
+				<li>
+					<a href="dgdw.html" class="active">市教育局</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">市广播影视集团</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">市工商局</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">市税务局</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">市城管局</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">市卫计委</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="no_border">市食药监局</a>
+				</li>
+			</ul>
+			<div class="select_nav">
+				<span id="select_drop"></span>
+				<!-- <select name="" id=""></select> -->
+			</div>
+		</nav>
+		<div id="mainWrap">
+			<div id="leftBar">
+				<ul>
+					<!--左边栏data-a属性和它对应的图表块的id相对应-->
+					<li data-a="a1">
+						<a>民意数量趋势图</a>
+					</li>
+					<li data-a="a2">
+						<a>结办 / 转办 / 超时</a>
+					</li>
+					<li data-a="a3">
+						<a>满意度分析</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div id="a1">
+					<div class="c_title">
+						民意数量趋势图
+						
+						<!--选择年月-->
+						<div class="monthPicker">
+							<span id="mp_data">
+								<span class="year"></span>年<span class="month"></span>月
+							</span>
+							<i class="pdown"></i>
+							<div class="mp_days">
+								<div class="mp_years">
+									<div class="yearsleft">
+										&lt;
+									</div>
+									<div class="yearssl">
+										<div class="yearsin">
+										</div>
+									</div>
+									<div class="yearsright">
+										&gt;
+									</div>
+								</div>
+								<div class="monsin">
+									<div>01</div>
+									<div>02</div>
+									<div>03</div>
+									<div>04</div>
+									<div>05</div>
+									<div>06</div>
+									<div>07</div>
+									<div>08</div>
+									<div>09</div>
+									<div>10</div>
+									<div>11</div>
+									<div>12</div>
+								</div>
+							</div>
+						</div>
+						<!--选择年月-->
+						
+					</div>
+					<div class="c_chart">
+						<div id="DepartNumTrend">
+							<h3 class="chartTitle">2017年1月，市公安局共办理热线394件，热线类型中咨询最多。</h3>
+							<div id="echart1">
+								<!--echart图套两层div,内层绘图用id,外层宽高样式-->
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div id="a2">
+					<div class="c_title1 bmjmy">
+						结办 / 转办 / 超时
+						
+						<div class="monthPicker">
+							<span id="mp_data">
+								<span class="year"></span>年<span class="month"></span>月
+							</span>
+							<i class="pdown"></i>
+							<div class="mp_days">
+								<div class="mp_years">
+									<div class="yearsleft">
+										&lt;
+									</div>
+									<div class="yearssl">
+										<div class="yearsin">
+										</div>
+									</div>
+									<div class="yearsright">
+										&gt;
+									</div>
+								</div>
+								<div class="monsin">
+									<div>01</div>
+									<div>02</div>
+									<div>03</div>
+									<div>04</div>
+									<div>05</div>
+									<div>06</div>
+									<div>07</div>
+									<div>08</div>
+									<div>09</div>
+									<div>10</div>
+									<div>11</div>
+									<div>12</div>
+								</div>
+							</div>
+						</div>
+						<!--选择年月-->
+						<!---->
+						<!-- <div class="qyselect">
+							<div class="qysl">
+								<span class="qyselect_con"></span>
+								<div class="down">
+									<i></i>
+								</div>
+								<div class="sections">
+						
+								</div>
+							</div>
+						</div> -->
+						<!---->
+					</div>
+					<div class="c_chart">
+						<div id="DepartTypecircle_d">
+							<div class="echart_box">
+								<div class="btit">
+									<div class="btit_txt">
+										<b style="color: #00f4e1">一次</b><span>办结率</span>
+									</div>
+									<p>2017年1月，市公安局一次办结率为34.59%</p>
+								</div>
+								<div class="echart_container" id="charts2_1"></div>
+							</div>
+							<div class="echart_box">
+								<div class="btit">
+									<div class="btit_txt">
+										<b style="color: #c5d314">多次</b><span>办结率</span>
+									</div>
+									<p>2017年1月，市公安局多次转办率为89.59%</p>
+								</div>
+								<div class="echart_container" id="charts2_2"></div>
+							</div>
+							<div class="echart_box no_bg">
+								<div class="btit">
+									<div class="btit_txt">
+										<b style="color: #00de16">超时</b><span>承办率</span>
+									</div>
+									<p>2017年1月，市公安局超时承办率为47.59%</p>
+								</div>
+								<div class="echart_container" id="charts2_3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div id="a3">
+					<div class="c_title2 bmjmy">
+						满意度分析
+						
+						<div class="monthPicker">
+							<span id="mp_data">
+								<span class="year"></span>年<span class="month"></span>月
+							</span>
+							<i class="pdown"></i>
+							<div class="mp_days">
+								<div class="mp_years">
+									<div class="yearsleft">
+										&lt;
+									</div>
+									<div class="yearssl">
+										<div class="yearsin">
+										</div>
+									</div>
+									<div class="yearsright">
+										&gt;
+									</div>
+								</div>
+								<div class="monsin">
+									<div>01</div>
+									<div>02</div>
+									<div>03</div>
+									<div>04</div>
+									<div>05</div>
+									<div>06</div>
+									<div>07</div>
+									<div>08</div>
+									<div>09</div>
+									<div>10</div>
+									<div>11</div>
+									<div>12</div>
+								</div>
+							</div>
+						</div>
+						<!--选择年月-->
+						<!---->
+						<!-- <div class="qyselect">
+							<div class="qysl">
+								<span class="qyselect_con"></span>
+								<div class="down">
+									<i></i>
+								</div>
+								<div class="sections">
+						
+								</div>
+							</div>
+						</div> -->
+						<!---->
+					</div>
+					<div class="c_chart">
+						<div id="DepartHotCircle" class="DepartTypecircle_bg">
+							<h3 class="chartTitle">2017年1月，市公安局满意度为84%。</h3>
+							<div id="echart3">
+
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		<script src="../js/tool/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/echarts3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/d3.v4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/tweenjs-0.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/jusf_dash_board.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/jusf_ePie.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="../js/dgdw.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('#yuqing').on('click',function(){
+				$('#loginform').submit();
+			})
+		</script>
+	</body>
+
+</html>

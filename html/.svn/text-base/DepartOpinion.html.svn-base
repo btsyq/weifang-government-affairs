@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/DepartOpinion.css">
+		<script type="text/javascript" src='../js/tool/respond.js'></script>
+		<title>部门民意(部门间)</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div>
+				<div class="inner">
+					<a href="index.html">
+						<h1 class="logo fl">
+					<img src="../images/title.png"/>
+				</h1>
+					</a>
+					<div class="admin fr">
+						<div class="admin_icon"></div>
+						<div class="admin_name">Admin</div>
+					</div>
+					<div class="userArea fr">
+						<a href="index.html" class="head_btn active">民意总揽</a>
+						<a class="head_btn dpo">部门民意</a>
+						<a href="PubPre.html" class="head_btn">民意预测</a>
+						<a href="PubYear.html" class="head_btn">民意同比</a>
+						<a href="hotlineroots.html" class="head_btn">热线溯源</a>
+						<div class="dpos">
+							<a href="DepartOpinion.html">
+								<div class="dpos1">
+									部门总览
+								</div>
+							</a>
+							<a href="DepartOpinionCity.html">
+								<div class="dpos2">
+									市直部门
+								</div>
+							</a>
+							<a href="DepartOpinionCounty.html">
+								<div class="dpos3">
+									县区部门
+								</div>
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mainWrap">
+			<div id="leftBar">
+				<ul>
+					<!--左边栏data-a属性和它对应的图表块的id相对应-->
+					<li data-a="a1">
+						<a>部门间数量堆积图</a>
+					</li>
+					<li data-a="a2">
+						<a>部门间数量趋势图</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div id="a1">
+					<div class="c_title">
+						部门间数量堆积图
+						
+						<!--选择年月-->
+						<div class="monthPicker">
+							<span id="mp_data">
+								<span class="year"></span>年<span class="month"></span>月
+							</span>
+							<i class="pdown"></i>
+							<div class="mp_days">
+								<div class="mp_years">
+									<div class="yearsleft">
+										&lt;
+									</div>
+									<div class="yearssl">
+										<div class="yearsin">
+										</div>
+									</div>
+									<div class="yearsright">
+										&gt;
+									</div>
+								</div>
+								<div class="monsin">
+									<div>01</div>
+									<div>02</div>
+									<div>03</div>
+									<div>04</div>
+									<div>05</div>
+									<div>06</div>
+									<div>07</div>
+									<div>08</div>
+									<div>09</div>
+									<div>10</div>
+									<div>11</div>
+									<div>12</div>
+								</div>
+							</div>
+						</div>
+						<!--选择年月-->
+						
+					</div>
+					<div class="c_chart">
+						<div id="DepartNum">
+							<div id="echart1">
+								<!--echart图套两层div,内层绘图用id,外层宽高样式-->
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div id="a2">
+					<div class="c_title bmjmy">
+						部门间民意数量趋势图
+						
+						<!--选择年份-->
+						<div class="qyselect">
+							年份选择 :
+							<div class="qysl">
+								<span class="qyselect_con"></span>
+								<div class="down">
+									<i></i>
+								</div>
+								<div class="sections">
+
+								</div>
+							</div>
+						</div>
+						<!--选择年份-->
+
+					</div>
+					<div class="c_chart">
+						<div id="DepartNumTrend">
+							<div id="echart2">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<script src="../js/tool/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/echarts3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/DepartOpinion.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

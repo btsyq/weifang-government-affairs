@@ -1,0 +1,232 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:14px/1.5 '\5FAE\8F6F\96C5\9ED1';}
+body{background:#fff;font-family:"微软雅黑";color:#333}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+button,input,select,textarea{vertical-align:baseline;*vertical-align:middle}
+address,cite,dfn,em,var,i{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:80%}
+ul,ol{list-style:none}
+a{text-decoration:none;;}
+sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+fieldset,img{border:0}
+input:focus,textarea:focus{outline:none}
+legend{color:#333}
+textarea{resize:none;overflow:auto;vertical-align:top}
+button{cursor:pointer;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+.cf{*zoom:1}
+.cf:before,.cf:after{display:table;content:"";line-height:0}
+.cf:after{clear:both}
+.clear{clear:both;width:1px;height:0;font-size:1px;visibility:hidden;overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.tl{text-align:left}
+.tr{text-align:right}
+.tc{text-align:center}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.fn{font-weight:normal!important}
+.fb{font-weight:bold}
+.f12{font-size:12px}
+.f14{font-size:14px}
+
+
+/*layout.css*/
+html,body{width: 100%;min-width: 1280px;}
+body{
+	background:url(../images/bg.png) no-repeat fixed;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.png',sizingMethod='scale');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: repeat\9;
+	overflow-y: scroll;
+}
+.header{
+	height: 68px;
+	line-height: 68px;
+	background:url(../images/headbg.png) no-repeat #293ad3;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;  
+	line-height: 68px;
+	box-sizing: border-box;
+	padding:0 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 1280px;
+	z-index: 999999;
+}
+.inner{
+	margin: 0 auto;
+	height: 100%;
+	color: #fff;
+}
+.logo{
+	display: inline-block;
+	height: 60px;
+	margin-top: 4px;
+}
+.admin{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 14px;
+	margin-left: 20px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.admin>div{
+	float: left;
+}
+.admin_icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url(../images/admin.png) center center no-repeat;
+	background-size: cover;
+	margin-right: 10px;
+}
+.admin_name{
+	font-size: 12px;
+}
+.userArea{
+	position: relative;
+}
+.head_btn{
+	display: block;
+	float: left;
+	padding: 0 26px;
+	font-size: 16px;
+	color: #fff;
+}
+.head_btn.active{
+	background: url(../images/iconbg.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+#loginform{
+	display: none;
+}
+
+
+.head_btn.dpo{
+	cursor: pointer;
+}
+.dpos{
+	display: none;
+	position: absolute;
+	left: 116px;
+	top: 69px;
+	background: #015bda;
+	width: 116px;
+	border-radius: 8px;
+	z-index: 9999;
+	overflow: hidden;
+}
+.dpos div{
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.dpos div:hover{
+	background: #013fbd;
+}
+.head_btn:hover{
+	color: #ff4200;
+}
+
+#mainWrap{
+	width: 100%;
+	position: absolute;
+}
+.content{
+	margin-top: 83px;
+	margin-left: 222px;
+	margin-bottom: 15px;
+	width: 1050px;
+	
+}
+.content>div{
+	border: 1px solid #002e73;
+	margin-bottom: 15px;
+}
+.c_title{
+	height: 40px;
+	line-height: 40px;
+	background: #002e73;
+	color: #fff;
+	font-size: 16px;
+	text-indent: 16px;
+}
+.c_chart{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	background: rgba(0,46,115,0.33);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#4c002e73,endcolorstr=#4c002e73);
+}
+.c_chart>div{
+	background: rgba(0,0,0,0.25);
+}
+
+
+
+
+@media only screen and (max-width: 1280px) {
+	.header{
+		position: absolute;
+	}
+}
+
+
+
+/*leftBar.css*/
+#leftBar{
+	position: fixed;
+	left: 0;
+	top: 68px;
+	width: 206px;
+	height: 100%;
+	background: rgba(0,46,115,0.5);
+	border-right: 1px solid #0053c3;
+	border-top: 1px solid #0053c3;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F002e73,endcolorstr=#7F002e73);
+}
+#leftBar ul li{
+	display: block;
+	box-sizing: border-box;
+	padding-left: 14px;
+	width: 180px;
+	height: 65px;
+	line-height: 1.5em;
+	color: #fff;
+	border-bottom:1px solid rgba(24,90,171,0.5);
+	margin: 0 auto;
+	cursor: pointer;
+	display: table;
+	
+}
+#leftBar ul li a{
+	display: table-cell;
+	vertical-align: middle;
+}
+#leftBar ul li a:hover{
+	color: #ffcc00;
+}
+#leftBar ul li.active{
+	color: #ffcc00;
+}
+
+/*@media only screen and (max-width: 1280px) {
+	#leftBar{
+		position: absolute;
+	}
+}*/

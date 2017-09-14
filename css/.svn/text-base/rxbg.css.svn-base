@@ -1,0 +1,245 @@
+.color-1f99d6 {
+    color: #1f99d6;
+}
+
+.color-c44528 {
+    color: #c44528;
+}
+
+.color-df9e10 {
+    color: #df9e10;
+}
+
+.bgColor-ff9600 {
+    background: #ff8d27;
+}
+
+.bgColor-ff3c00 {
+    background: #a6d845;
+}
+
+.bgColor-0084ff {
+    background: #09b2e9;
+}
+
+.bgColor-1aacfb {
+    background: #4ac977;
+}
+
+.bgColor-e9d10a {
+    background: #ff502d;
+}
+
+.content {
+    width: 900px;
+    margin: 83px auto 15px;
+}
+
+.contentc {
+    /*background: #001343;
+    opacity: 0.8;*/
+    background: rgba(0,19,67,0.5);
+    position: relative;
+    padding: 110px 28px 33px 28px;
+}
+
+.contentTitle {
+    height: 68px;
+    width: 920px;
+    position: absolute;
+    left: -10px;
+    top: 29px;
+    background: url("../images/line3.png") no-repeat;
+    background-size: cover;
+}
+
+.contentTitle span {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    color: #99b7ef;
+    font-size: 14px;
+    top: 30px;
+    right: 150px;
+}
+.contentTitle select {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    color: #99b7ef;
+    font-size: 14px;
+    top: 30px;
+    right: 180px;
+    border: none;
+}
+
+.moudle {
+    overflow: hidden;
+}
+
+.moudle h3 {
+    font-size: 16px;
+    color: #FFF;
+    line-height: 36px;
+}
+
+.moudleCont {
+    /*background: #000c34;
+    opacity: 0.8;*/
+    background: rgba(0,12,52,0.5);
+    border: 1px solid #002c79;
+}
+
+.moudle1 {
+    margin-bottom: 18px;
+}
+
+.moudle1 .moudleCont {
+    padding: 16px;
+}
+
+.moudle1 .moudleCont p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.moudle2 {
+    margin-bottom: 18px;
+}
+
+.moudle2 .moudleCont {
+    height: 320px;
+    position: relative;
+}
+
+.moudle2 .moudleCont .chart1 {
+    width: 326px;
+    height: 320px;
+}
+
+.moudle2 .moudleCont .chart1right {
+    width: 366px;
+    height: 198px;
+    position: absolute;
+    /*background: #011844;
+    opacity: 0.8;*/
+    background: rgba(1,24,68,0.5);
+    left: 368px;
+    top: 49px;
+    padding: 30px 0 0 62px;
+}
+
+.moudle2 .moudleCont .chart1right p {
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.moudle2 .moudleCont .chart1right p i {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 13px;
+    height: 5px;
+    border-radius: 1px;
+}
+
+.moudle2 .moudleCont .chart1right p .jianshu {
+    color: #8a92a6;
+}
+
+.moudle2 .moudleCont .chart1right p .zhanbi {
+    color: #8a92a6;
+}
+
+.moudle2 .moudleCont .chart1right p .huanbi {
+    color: #cc4524;
+    display: inline-block;
+    margin-left: 3px;
+    padding-right: 10px;
+    /*background: url("../images/baogao_15.png") no-repeat right center;*/
+}
+.moudle2 .moudleCont .chart1right p .huanbi.xiadie{
+	color: #26af24;
+}
+.moudle3 .moudleCont {
+    padding: 0 16px;
+    padding-bottom: 16px;
+}
+
+.moudle3 .moudleCont .zmodule h4 {
+    line-height: 45px;
+    text-indent: 10px;
+    color: #FFF;
+    font-size: 14px;
+    /*background: url("../images/baogao_11.png") no-repeat left;*/
+}
+
+.moudle3 .moudleCont .zmodule p {
+    line-height: 20px;
+    font-size: 14px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+    color: #FFF;
+
+}
+
+.moudle .moudleCont table {
+    width: 100%;
+    border-right: 1px solid #002e77;
+}
+
+.moudle .moudleCont th {
+    width: 33.3%;
+    background: #003687;
+    line-height: 33px;
+    color: #0096ea;
+    border-bottom: 1px solid #005ad4;
+    border-top: 1px solid #005ad4;
+}
+
+.moudle .moudleCont td {
+    text-align: center;
+    width: 33.3%;
+    line-height: 33px;
+    color: #fff;
+    border-left: 1px solid #002e77;
+    border-bottom: 1px solid #002e77;
+
+}
+.moudle .moudleCont td.zhang {
+     /*background: url("../images/baogao_15.png") no-repeat 150px center;*/
+     color: #cc5216;
+ }
+.moudle .moudleCont td.die {
+    /*background: url("../images/baogao_18.png") no-repeat 150px center;*/
+    color: #26af24;
+}
+.border-left-005ad4 {
+    border-left: 1px solid #005ad4;
+}
+
+.border-right-005ad4 {
+    border-right: 1px solid #005ad4;
+}
+.moudle5 .moudleCont{
+    padding: 16px;
+}
+.moudle5 .moudleCont h5{
+     color: #229ceb;
+     line-height: 24px;
+     font-size: 14px;
+ }
+.moudle5 .moudleCont p{
+    color: #fff;
+    line-height: 24px;
+    text-indent: 24px;
+    font-size: 14px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+

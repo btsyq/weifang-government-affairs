@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" id="baogao">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/rxbg.css">
+		<script src="../js/tool/respond.js" type="text/javascript" charset="utf-8"></script>
+		<title>报告</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div>
+				<div class="inner">
+					<a href="index.html">
+						<h1 class="logo fl">
+					<img src="../images/title.png"/>
+				</h1>
+					</a>
+					<div class="admin fr">
+						<div class="admin_icon"></div>
+						<div class="admin_name">Admin</div>
+					</div>
+					<div class="userArea fr">
+						<a href="index.html" class="head_btn">首页</a>
+						<a href="wldwrx.html" class="head_btn">网络单位热线</a>
+						<a href="sqrd.html" class="head_btn">诉求热点</a>
+						<a href="rxyc.html" class="head_btn">热线预测</a>
+						<a href="rxzz.html" class="head_btn">热线追踪</a>
+						<a href="javascript:void(0)" class="head_btn" id="yuqing">舆情</a>
+						<form method="post" id="loginform" action="http://yuqing.9cfcf.com/login/login.do">
+							<input type="text" name="userName" id="userName" placeholder="用户名" value="yuqing@jusfoun.com"/>
+							<div class="loginBtnBox">
+								<input type="submit" class="loginBtn" value="登录" style="width: 150px; margin-top: 10px; margin-left: 5px" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mainWrap">
+			<div class="content">
+				<div class="contentc" style="border: none">
+					<div class="contentTitle">
+                         <!--<span>2017-01-23</span>-->
+                         <select name="" id="timtab">
+                         	<option value="">2017-01</option>
+                         	<option value="">2016-12</option>
+                         </select>
+					</div>
+					<div class="moudle moudle1">
+						<h3>基本情况</h3>
+						<div class="moudleCont">
+							<p>2016年12月，市政服务热线共制单<span class="color-1f99d6">42845</span>件。2016年12月满意率为<span class="color-1f99d6">0%</span>
+							</p>
+							<p>转交网络单位办理的事项<span class="color-1f99d6">0</span>件次，环比上涨<span class="color-c44528">0%</span>。网络单位一次办结率为<span class="color-1f99d6">0%</span>，较上月上涨<span class="color-c44528">0%</span>。
+							</p>
+						</div>
+					</div>
+					<div class="moudle moudle2">
+						<h3>受理类别</h3>
+						<div class="moudleCont">
+							<div class="chart1" id="chart1"></div>
+							<div class="chart1right">
+								<p><i class="bgColor-0084ff"></i>投诉类<span class="jianshu">14013</span>件，占<span class="zhanbi">32.71%</span>，环比上涨<span class="huanbi"> 380.89%</span></p>
+								<p><i class="bgColor-ff3c00"></i>咨询类<span class="jianshu"> 13130 </span>件，占<span class="zhanbi"> 30.65% </span>，环比上涨<span class="huanbi"> 193.34% </span></p>
+								<p><i class="bgColor-ff9600"></i>求助类<span class="jianshu"> 11976 </span>件，占<span class="zhanbi"> 27.95%</span>，环比下跌<span class="huanbi xiadie"> 36.49% </span></p>
+								<p><i class="bgColor-1aacfb"></i>举报类<span class="jianshu">3058</span>件，占<span class="zhanbi">7.14%</span>，环比上涨<span class="huanbi"> 62.83%</span></p>
+								<p><i class="bgColor-e9d10a"></i>建议类<span class="jianshu">641</span>件，占<span class="zhanbi">1.5%</span>，环比上涨<span class="huanbi"> 76.58%</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="moudle moudle3">
+						<h3>网络单位赴办情况</h3>
+						<div class="moudleCont">
+							<div class="zmodule zmodule1">
+								<h4>县市区网络单位</h4>
+								<div class="zmoudleCont">
+									<table>
+										<tr>
+											<th class="border-left-005ad4">县区单位名称</th>
+											<th>工单量（件）</th>
+											<th class="border-right-005ad4">一次结案率（%）</th>
+										</tr>
+										<tr>
+											<td>安丘市</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>昌乐县</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>永城市</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>奎文区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>诸城市</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>临朐县</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>寒亭区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>青州市</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>坊子区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>寿光县</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>高密市</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>总工单量</td>
+											<td colspan="2" style="color:#11a8fe ">0</td>
+										</tr>
+										<tr>
+											<td>平均一次办案率</td>
+											<td colspan="2" style="color:#c98418;">0%</td>
+										</tr>
+									</table>
+
+								</div>
+							</div>
+							<div class="zmodule zmodule2">
+								<h4>开发区网络单位</h4>
+								<div class="zmoudleCont">
+									<table>
+										<tr>
+											<th class="border-left-005ad4">开发区单位名称</th>
+											<th>工单量（件）</th>
+											<th class="border-right-005ad4">一次结案率（%）</th>
+										</tr>
+										<tr>
+											<td>综合保税区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>经济开发区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>高新开发区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>峡山开发区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>滨海开发区</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>总工单量</td>
+											<td colspan="2" style="color:#11a8fe ">0</td>
+										</tr>
+										<tr>
+											<td>平均一次办案率</td>
+											<td colspan="2" style="color:#c98418;">0%</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="zmodule zmodule3">
+								<h4>市级网络单位</h4>
+								<p>市级网络单位总工单量为1445件，一次办案率为<span style="color:#116195 ">0.4%</span></p>
+								<div class="zmoudleCont">
+									<table style="margin-bottom: 8px;">
+									<tr>
+										<th class="border-left-005ad4">市单位名称</th>
+										<th>工单量>=100（件）</th>
+										<th class="border-right-005ad4">一次结案率（%）</th>
+									</tr>
+									<tr>
+										<td>市公安局</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>市教育局</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>市交警支队</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>市住建局</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>市政局</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+								</table>
+									<table>
+										<tr>
+											<th class="border-left-005ad4">市级单位名称</th>
+											<th>工单量（件）</th>
+											<th class="border-right-005ad4">一次结案率>=90（%）</th>
+										</tr>
+										<tr>
+											<td>市教育局</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>市政局</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>市国土局</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>市经信委</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>市邮政管理局</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>市教育局</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>市交警支队</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="moudle moudle4">
+						<h3>诉求热点<span class="color-df9e10"> TOP10</span></h3>
+						<div class="moudleCont">
+							<table>
+								<tr>
+									<th class="border-left-005ad4">诉求热点</th>
+									<th>热线量（件）</th>
+									<th class="border-right-005ad4">环比（%）</th>
+								</tr>
+								<tr>
+									<td>运输管理</td>
+									<td>7758</td>
+									<td class="zhang">0</td>
+								</tr>
+								<tr>
+									<td>城区供暖</td>
+									<td>5909</td>
+									<td class="die">25.88</td>
+								</tr>
+								<tr>
+									<td>工商管理</td>
+									<td>3631</td>
+									<td class="zhang">0</td>
+								</tr>
+								<tr>
+									<td>农民及农村问题</td>
+									<td>3525</td>
+									<td class="zhang">31.33</td>
+								</tr>
+								<tr>
+									<td>交通治安</td>
+									<td>2781</td>
+									<td class="zhang">54.16</td>
+								</tr>
+								<tr>
+									<td>物业管理</td>
+									<td>2290</td>
+									<td class="zhang">29.16</td>
+								</tr>
+								<tr>
+									<td>劳动保障</td>
+									<td>1834</td>
+									<td class="zhang">42.61</td>
+								</tr>
+								<tr>
+									<td>房产纠纷</td>
+									<td>1452</td>
+									<td class="zhang">13.88</td>
+								</tr>
+								<tr>
+									<td>社会治安</td>
+									<td>1330</td>
+									<td class="zhang">23.03</td>
+								</tr>
+								<tr>
+									<td>市政建设</td>
+									<td>1319</td>
+									<td class="zhang">7.59</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="moudle moudle5">
+						<h3>其他</h3>
+						<div class="moudleCont">
+							<h5>超时未结事项</h5>
+							<p class="margin-bottom-20">2016年12月超时未结事项共0件</p>
+							<h5>超时未结事项</h5>
+							<p>2016年12月办理四次及以上事项共0件</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/tool/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/echarts3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/rxbg.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('#yuqing').on('click',function(){
+				$('#loginform').submit();
+			})
+		</script>
+	</body>
+
+</html>

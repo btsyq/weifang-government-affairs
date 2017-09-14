@@ -1,0 +1,502 @@
+/*六个日期样式*/
+.c_title,.c_title1,.c_title2,.c_title3,.c_title4,.c_title5{
+	height: 40px;
+	line-height: 40px;
+	background: #002e73;
+	color: #fff;
+	font-size: 16px;
+	text-indent: 16px;
+}
+.chartTitle{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	font-size: 14px;
+	text-indent: 30px;
+	background-image: -webkit-radial-gradient(ellipse,hsla(219,100%,43%,.3),hsla(219,100%,43%,0));
+	background-image: radial-gradient(ellipse,hsla(219,100%,43%,.3),hsla(219,100%,43%,0));
+}
+/*六个图表容器*/
+#DepartNumTrend{
+	height: 400px;
+	width: 100%;
+	padding-top:6px;
+}
+#DepartTypecircle{
+	height: 470px;
+	width: 100%;
+	padding-top:6px;
+}
+#DepartHotCircle{
+	height: 500px;
+	width: 100%;
+	padding-top:6px;
+}
+#DepartSource{
+	height: 380px;
+	width: 100%;
+	padding-top:6px;
+}
+#DepartCityRank{
+	height: 540px;
+	width: 100%;
+	padding-top:6px;
+}
+#DepartAreaRank1{
+	height: 380px;
+	width: 100%;
+	padding-top:6px;
+}
+#DepartAreaRank2{
+	height: 540px;
+	width: 100%;
+	padding-top:6px;
+}
+#DepartAreaRank3{
+	height: 540px;
+	width: 100%;
+	padding-top:6px;
+}
+#echart1{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 330px;
+}
+#echart2{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 400px;
+}
+#echart3{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 440px;
+}
+#echart4{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 320px;
+}
+#echart5{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	background: url(../images/border.png) no-repeat;
+	background-size: 1px 60%;
+	background-position: center;
+}
+#echart5_1{
+	/*border: 1px solid red;*/
+	width: 45%;
+	height: 100%;
+	float: left;
+	
+	
+}
+#echart5_2{
+	/*border: 1px solid red;*/
+	width: 45%;
+	height: 100%;
+	float: left;
+	margin-left: 8%;
+}
+#echart6{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 410px;
+}
+#echart7{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 410px;
+}
+
+
+/*图表里面的tab切换，只需要切换li的active类名 starts*/
+.navList{
+	height:70px;
+	line-height: 70px;
+	margin-bottom:10px;
+	margin-left:10px;
+}
+.navList li{
+	margin-top:20px;
+	position: relative;
+	width:88px;
+	height:30px;
+	color:#4f89e3;
+	text-align: center;
+	line-height: 30px;
+	margin-right:3px;
+	background:rgba(7,78,255,0.2);
+	border:1px solid #0a3397;
+	cursor: pointer;
+}
+.navList li i{
+	position: absolute;
+	top:-25px;
+	left: 0;
+	width:100%;
+	height:80px;
+	background: url(../images/navListLi.png);
+	display: none;
+}
+.navList li.active i{
+	display: block;
+}
+.navList li span{
+	position: absolute;
+	top:0px;
+	left: 0;
+	width:100%;
+}
+.navList li.active span{
+	z-index: 2;
+	color:#fff;
+}
+/*图表里面的tab切换，只需要切换li的active类名  ends*/
+
+/*年月选择*/
+.monthPicker {
+	float: right;
+	color: #fff;
+	height: 100%;
+	width: 125px;
+	border: 1px solid #025ad2;
+	box-sizing: border-box;
+	background: #00419b;
+	cursor: pointer;
+	font-size: 12px;
+	position: relative;
+	margin-left: 10px;
+}
+
+.pdown {
+	display: inline-block;
+	width: 10px;
+	height: 6px;
+	background: url(../images/coins.png) no-repeat;
+	background-position: 0 -52px;
+	float: right;
+	margin-top: 16px;
+	margin-right: 7px;
+}
+
+.mp_days {
+	position: absolute;
+	right: -1px;
+	top: 38px;
+	width: 255px;
+	height: 135px;
+	border: 1px solid #025ad2;
+	z-index: 99;
+	background: #001e54;
+	display: none;
+}
+
+.mp_years {
+	height: 40px;
+	border-bottom: 1px solid #025ad2;
+}
+
+.yearsleft,
+.yearsright {
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	text-align: center;
+	text-indent: 0px;
+	font-size: 16px;
+	color: #0096f6;
+	margin-top: 9px;
+	border-radius: 6px;
+}
+
+.yearsleft {
+	float: left;
+	margin-left: 10px;
+}
+
+.yearsleft:hover {
+	background: #002d77;
+}
+
+.yearsright {
+	float: left;
+}
+
+.yearsright:hover {
+	background: #002d77;
+}
+
+.yearssl {
+	height: 22px;
+	width: 186px;
+	float: left;
+	margin-top: 9px;
+	overflow: hidden;
+	position: relative;
+}
+
+.yearsin {
+	height: 22px;
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
+
+.yearsin>div {
+	width: 62px;
+	height: 22px;
+	float: left;
+	line-height: 22px;
+	color: #3b9dff;
+	border-radius: 11px;
+}
+
+.yearsin>div:hover {
+	color: #00f0ff;
+}
+
+.yearsin>.active {
+	background: #0050c9;
+	color: #00f0ff;
+}
+
+.monsin {
+	width: 240px;
+	height: 90px;
+	color: #3b9dff;
+	margin-left: 6px;
+	position: relative;
+}
+
+.monsin>div {
+	width: 60px;
+	height: 22px;
+	float: left;
+	line-height: 22px;
+	text-indent: 0px;
+	text-align: center;
+	border-radius: 11px;
+	margin-top: 6px;
+}
+
+.monsin>div:hover {
+	background: #0050c9;
+	color: #00f0ff;
+}
+
+.monsin>.active {
+	background: #00286b;
+}
+
+
+/*年份选择*/
+.qyselect {
+	height: 100%;
+	/*border: 1px solid red;*/
+	float: right;
+	width: 200px;
+	color: #fff;
+	line-height: 40px;
+	font-size: 12px;
+	position: relative;
+}
+
+.qysl {
+	position: absolute;
+	left: 50px;
+	top: 6px;
+	width: 138px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #0050c9;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+}
+.qyselect_con{
+	display: inline-block;
+	height: 24px;
+	max-width: 80px;
+	text-indent: 0px;
+	overflow: hidden;
+}
+.qyselect_con:hover{
+	overflow: visible;
+	height: auto;
+	background: #002e73;
+	border-radius: 5px;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.down {
+	display: inline-block;
+	float: right;
+	width: 25px;
+	height: 25px;
+	border-left: 1px solid #0050c9;
+	background: #002ba7;
+}
+
+.down>i {
+	display: block;
+	width: 10px;
+	height: 6px;
+	background: url(../images/coins.png) 0 -52px no-repeat;
+	margin-top: 10px;
+	margin-left: 8px;
+}
+
+.sections {
+	display: none;
+	background: #015bda;
+	color: #fff;
+	z-index: 99;
+	position: absolute;
+	left: 0;
+	top: 25px;
+	width: 138px;
+	border-radius: 5px;
+}
+
+.sections>div{
+	/*line-height: 15px;*/
+	height: 24px;
+	overflow: hidden;
+}
+
+.sections>div:hover {
+	background: #013fbd;
+}
+
+#sldjt{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+#sldjt:hover{
+	color: #3b9dff;
+	border-bottom: 1px solid #3b9dff;
+}
+/*导航样式*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.content{
+	margin-top: 143px;
+}
+.nav{
+	width: 100%;
+	min-width: 1280px;
+	height: 60px;
+	border: 1px solid #006dff;
+	background: rgba(0,54,138,0.5);
+	position: fixed;
+	top: 68px;
+	left: 0;
+	z-index: 9999999;
+}
+.nav_ul{
+	margin-left: 60px;
+	float: left;
+}
+.nav_ul li{
+	float: left;
+	line-height: 60px;
+}
+.nav_ul li a{
+	padding:4px 22px;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	border-right: 1px solid #3b9dff;
+}
+.nav_ul li a.no_border{
+	border-right: none;
+}
+.nav_ul li a.active{
+	color:#ff7800; 
+}
+
+#leftBar{
+	top: 130px;
+}
+.select_nav{
+	float: right;
+	margin-right: 10px;
+	width: 210px;
+	height: 36px;
+	border: 1px solid #0050c9;
+	background: rgba(0,34,99,0.6);
+	margin-top: 11px;
+	position: relative;
+}
+#select_drop{
+	position: absolute;
+	width: 17px;
+	height: 12px;
+	top: 12px;
+	right: 10px;
+	background: url(../images/drop.png) no-repeat;
+	cursor: pointer;
+}
+.chartTitle{
+	width: 100%;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-size: 14px;
+    text-indent: 30px;
+    background: url(../images/textbg.png) no-repeat;
+    background-size: cover;
+    margin-top: 12px;
+}
+.c_chart>div.DepartTypecircle_bg{
+	background:rgba(0,0,0,0.25) url(../images/chartbg.png) no-repeat center 68%;
+}
+
+/*单个单位*/
+.btit {
+    height: 50px;
+    color: #fff;
+    padding-top: 20px;
+}
+.btit_txt {
+    height: 18px;
+    line-height: 18px;
+    margin-left: 30px;
+    border-left: 3px solid #ff3c00;
+    text-indent: 8px;
+    font-size: 16px;
+}
+
+.btit p{
+	line-height: 34px;
+	padding-left: 40px;
+}
+.echart_box{
+	width: 33.3%;
+	float: left;
+	height: 100%;
+	
+}
+.echart_box.no_bg{
+	background:none;
+}
+#DepartTypecircle_d{
+	height: 250px;
+}
+.echart_container{
+	width: 100%;
+	height: 150px;
+	background: url(../images/line2.png) no-repeat right center;
+}

@@ -1,0 +1,23 @@
+p.summary{
+    width: 95%;
+    text-indent: 2em;
+    margin:auto;
+    padding: 20px 0;
+}
+/*地区热线分析页面样式*/
+.chart_container{
+    width: 80%;
+    height: 320px;
+    margin: auto;
+}
+
+/*民意类型页面样式*/
+.chart_container2{
+    width: 80%;
+    height: 380px;
+    margin: auto;
+}
+#chart1 {
+    height: 490px;
+    width: 100%;
+}

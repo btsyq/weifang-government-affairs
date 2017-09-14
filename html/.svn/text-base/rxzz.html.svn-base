@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/rxzz.css">
+		<link href="../css/newmap.css" type="text/css" rel="stylesheet">
+		<!--[if lte IE 9]><link rel="stylesheet" href="../css/newmap.ie.css" /><![endif]-->
+		<script type="text/javascript" src='../js/tool/respond.js'></script>
+
+		<title>热线溯源</title>
+	</head>
+
+	<body onload="mapInit();">
+		<div class="header">
+			<div>
+				<div class="inner">
+					<a href="index.html">
+						<h1 class="logo fl">
+					<img src="../images/title.png"/>
+				</h1>
+					</a>
+					<div class="admin fr">
+						<div class="admin_icon"></div>
+						<div class="admin_name">Admin</div>
+					</div>
+					<div class="userArea fr">
+						<a href="index.html" class="head_btn">首页</a>
+						<a href="wldwrx.html" class="head_btn">网络单位热线</a>
+						<a href="sqrd.html" class="head_btn">诉求热点</a>
+						<a href="rxyc.html" class="head_btn">热线预测</a>
+						<a href="rxzz.html" class="head_btn active">热线追踪</a>
+						<a href="javascript:void(0)" class="head_btn" id="yuqing">舆情</a>
+						<form method="post" id="loginform" action="http://yuqing.9cfcf.com/login/login.do">
+							<input type="text" name="userName" id="userName" placeholder="用户名" value="yuqing@jusfoun.com"/>
+							<div class="loginBtnBox">
+								<input type="submit" class="loginBtn" value="登录" style="width: 150px; margin-top: 10px; margin-left: 5px" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mainwrap">
+			<div id="map" class="mapdiv">
+			</div>
+			<div id="search">
+				<div class="searchform">
+					<form action="" method="post">
+						<input type="text" id="" value="" class="searchtext" placeholder="输入电话号码查询" />
+						<input type="submit" value="" class="searchbtn" />
+					</form>
+				</div>
+				<div class="searchcontent">
+					<div class="sctop">
+						<div class="sctab">
+							<div class="jzxx active">
+								机主信息
+							</div>
+							<div class="jdxx scmid">
+								街道信息
+							</div>
+							<div class="qsxx">
+								亲属信息
+							</div>
+						</div>
+						<div class="sccon">
+							<div class="jzxxdiv active">
+								<div class="jzmsg">
+									<p>
+										<span class="jzmsgs">机主姓名 : </span>
+										<span id="name"></span>
+									</p>
+									<p>
+										<span class="jzmsgs">机主年龄 : </span>
+										<span id="age"></span>
+									</p>
+									<p>
+										<span class="jzmsgs">机主性别 : </span>
+										<span id="sex"></span>
+									</p>
+									<p>
+										<span class="jzmsgs">过往病历 : </span>
+										<span id="ill"></span>
+									</p>
+								</div>
+								<div class="callmsg">
+									<div class="cmtitle">
+										<div class="cmicon">
+
+										</div>
+										<div class="cmtst">
+											来电记录
+										</div>
+									</div>
+									<table class="msgtable">
+										<tr>
+											<th class="ldsj">来电时间</th>
+											<th class="ldnr">来电内容</th>
+										</tr>
+									</table>
+								</div>
+
+							</div>
+							<div class="jdxxdiv">
+								<span class="divmsg">街道 : </span> 11111111111111
+							</div>
+							<div class="qsxxdiv">
+								<span class="divmsg">姓名 : </span>2222222222222<br />
+								<span class="divmsg">姓名 : </span>2222222222222<br />
+								<span class="divmsg">姓名 : </span>2222222222222<br />
+								<span class="divmsg">姓名 : </span>2222222222222<br />
+								<span class="divmsg">姓名 : </span>2222222222222<br />
+								<span class="divmsg">姓名 : </span>2222222222222<br />
+								<span class="divmsg">姓名 : </span>2222222222222<br />
+								
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="scbtm">
+						<div class="toggle">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="loading">
+				<img src="../images/loading.gif"/>
+			</div>
+		</div>
+		<script type="text/javascript" src='../js/tool/jquery.min.js'></script>
+		<script type="text/javascript" src='../js/tool/jquery.nicescroll.min.js'></script>
+		<script type="text/javascript" src='../js/tool/NewMap.js'></script>
+		<script type="text/javascript" src='../js/tool/NExtWMTSLayer.js'></script>
+		<script type="text/javascript" src='../js/rxzz.js'></script>
+		<script type="text/javascript">
+			$('#yuqing').on('click',function(){
+				$('#loginform').submit();
+			})
+		</script>
+	</body>
+
+</html>

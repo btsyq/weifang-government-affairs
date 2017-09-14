@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dqzq.css">
+		<script src="../js/tool/respond.js" type="text/javascript" charset="utf-8"></script>
+		<title>地区</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div>
+				<div class="inner">
+					<a href="index.html">
+						<h1 class="logo fl">
+					<img src="../images/title.png"/>
+				</h1>
+					</a>
+					<div class="admin fr">
+						<div class="admin_icon"></div>
+						<div class="admin_name">Admin</div>
+					</div>
+					<div class="userArea fr">
+						<a href="index.html" class="head_btn">首页</a>
+						<a href="wldwrx.html" class="head_btn">网络单位热线</a>
+						<a href="sqrd.html" class="head_btn">诉求热点</a>
+						<a href="rxyc.html" class="head_btn">热线预测</a>
+						<a href="rxzz.html" class="head_btn">热线追踪</a>
+						<a href="javascript:void(0)" class="head_btn" id="yuqing">舆情</a>
+						<form method="post" id="loginform" action="http://yuqing.9cfcf.com/login/login.do">
+							<input type="text" name="userName" id="userName" placeholder="用户名" value="yuqing@jusfoun.com"/>
+							<div class="loginBtnBox">
+								<input type="submit" class="loginBtn" value="登录" style="width: 150px; margin-top: 10px; margin-left: 5px" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mainWrap">
+			<div class="content">
+				<div>
+					<div class="c_title" id="t1">
+						民意数量同比
+						
+
+						
+						<!--选择年月-->
+						<div class="monthPicker">
+							<span id="mp_data">
+								<span class="year"></span>年<span class="month"></span>月
+							</span>
+							<i class="pdown"></i>
+							<div class="mp_days">
+								<div class="mp_years">
+									<div class="yearsleft">
+										&lt;
+									</div>
+									<div class="yearssl">
+										<div class="yearsin">
+										</div>
+									</div>
+									<div class="yearsright">
+										&gt;
+									</div>
+								</div>
+								<div class="monsin">
+									<div>01</div>
+									<div>02</div>
+									<div>03</div>
+									<div>04</div>
+									<div>05</div>
+									<div>06</div>
+									<div>07</div>
+									<div>08</div>
+									<div>09</div>
+									<div>10</div>
+									<div>11</div>
+									<div>12</div>
+								</div>
+							</div>
+						</div>
+						<!--选择年月-->
+						
+						<div class="returnh">
+							<a href="index.html">返回上一页</a>
+						</div>
+						
+					</div>
+					<div class="c_chart">
+						<div id="chart1">
+							<div id="block1">
+								<div class="btit">
+									<div class="btit_txt">
+										诉求热点<span style="color: #ffc600;">TOP5</span>
+									</div>
+								</div>
+								
+								<h3 class="chartTitle">2016年12月，昌邑市投诉类热线主要发生在农民及农村问题(201件)、城区供暖(198件)、工商管理(113件)、劳动保障(87件)和交通治安(75件)方面。</h3>
+								<div id="echart1">
+									
+								</div>
+							</div>
+							<div id="block2">
+								<div class="btit">
+									<div class="btit_txt txt_line">
+										热点类型分布
+									</div>
+								</div>
+								<h3 class="chartTitle">2016年12月，昌邑市热线最多为投诉(540件)，其次分别为求助(468件)、咨询(167件)、举报(137件)、建议(13件)和其他(1件)方面。</h3>
+								<div id="echart2">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<script src="../js/tool/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/echarts3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/jusf_eBar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tool/jusf_ePie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/dqzq12.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('#yuqing').on('click',function(){
+				$('#loginform').submit();
+			})
+		</script>
+	</body>
+
+</html>
